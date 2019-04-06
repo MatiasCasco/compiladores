@@ -3,6 +3,7 @@ compiladores
 
 Compiladores FPUNA
 
-Autor: Julio Paciello
-Para compilar: gcc anlex.c tablaSimbolos.c -o anlex
-
+Alumno 1- Matias Ignacio Casco Cantero
+Alumno 2- Alexis Adrian Delgado Piris
+Para compilar: gcc anlex.c -o anlex
+ejecutar: ./anlex fuente.txt

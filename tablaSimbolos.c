@@ -108,62 +108,23 @@ void initTablaSimbolos()
 {
 	int i;
 	const char *vector[]={
-		"program",
-		"type",
-		"var",
-		"array",
-		"begin",
-		"end",
-		"do",
-		"to",
-		"downto",
-		"then",
-		"of",
-		"function",
-		"procedure", 
-		"integer", 
-		"real", 
-		"boolean", 
-		"char", 
-		"for", 
-		"if", 
-		"else", 
-		"while", 
-		"repeat", 
-		"until", 
-		"case", 
-		"record", 
-		"writeln",
-		"write",
-		"const"
-	};
- 	for (i=0;i<28;i++)
+		"TRUE",		// CAMBIADO 
+		"FALSE",
+		"LITERAL_NUM",	// CAMBIADO
+		"LITERAL_CADENA",
+		"ERROR"
+	};		
+ 	for (i=0;i<5;i++)
 	{
 		insertTablaSimbolos(vector[i],i+256);
 	}
-	insertTablaSimbolos(",",',');
-	insertTablaSimbolos(".",'.');
-	insertTablaSimbolos(":",':');
-	insertTablaSimbolos(";",';');
-	insertTablaSimbolos("(",'(');
-	insertTablaSimbolos(")",')');
-	insertTablaSimbolos("[",'[');
-	insertTablaSimbolos("]",']');
-	insertTablaSimbolos("true",BOOL);
-	insertTablaSimbolos("false",BOOL);
-	insertTablaSimbolos("not",NOT);
-	insertTablaSimbolos("<",OPREL);
-	insertTablaSimbolos("<=",OPREL);
-	insertTablaSimbolos("<>",OPREL);
-	insertTablaSimbolos(">",OPREL);
-	insertTablaSimbolos(">=",OPREL);
-	insertTablaSimbolos("=",OPREL);
-	insertTablaSimbolos("+",OPSUMA);
-	insertTablaSimbolos("-",OPSUMA);
-	insertTablaSimbolos("or",OPSUMA);
-	insertTablaSimbolos("*",OPMULT);
-	insertTablaSimbolos("/",OPMULT);
-	insertTablaSimbolos("div",OPMULT);
-	insertTablaSimbolos("mod",OPMULT);
-	insertTablaSimbolos(":=",OPASIGNA);
+	insertTablaSimbolos(",",COMA);
+	insertTablaSimbolos(":",DOS_PUNTOS);
+	insertTablaSimbolos("{",L_LLAVE);	// EN VEZ DE LOS PARENTESIS
+	insertTablaSimbolos("}",R_LLAVE);
+	insertTablaSimbolos("[",L_CORCHETE); // LE AGREGAMOS LA CONSTANTES
+	insertTablaSimbolos("]",R_CORCHETE);
+	insertTablaSimbolos("NULL",PR_NULL);
+	
+	
 }

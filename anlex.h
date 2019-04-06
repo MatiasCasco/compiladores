@@ -7,45 +7,20 @@
 /************* Definiciones ********************/
 
 //Codigos
-#define PROGRAM		256
-#define TYPE		257
-#define VAR			258
-#define ARRAY		259
-#define BEGIN		260
-#define END			261
-#define PR_DO		262
-#define TO			263
-#define DOWNTO		264
-#define THEN		265
-#define OF			266
-#define FUNCTION	267
-#define PROCEDURE	268
-#define PR_INTEGER	269
-#define PR_REAL		270
-#define PR_BOOLEAN	271
-#define PR_CHAR		272
-#define PR_FOR		273
-#define PR_IF		274
-#define PR_ELSE		275
-#define PR_WHILE	276
-#define REPEAT		277
-#define UNTIL		278
-#define PR_CASE		279
-#define RECORD		280
-#define WRITELN		281
-#define WRITE		282
-#define CONST		283
-#define NUM			284
-#define ID			285
-#define BOOL		286
-#define CAR			287
-#define LITERAL		288
-#define NOT			289
-#define OPREL		290
-#define OPSUMA		291
-#define OPMULT		292
-#define OPASIGNA	293
-#define USER_TYPE	294
+#define PR_TRUE		256	// MODIFICADO
+#define PR_FALSE	257	// MODIFICADO
+#define LITERAL_NUM	258 // CAMBIADO
+#define LITERAL_CADENA	259 // CAMBIADO
+#define ERROR		260
+// ASCII
+#define L_LLAVE		123 // { CODIGO ASCII
+#define R_LLAVE		125 // } CODIGO ASCII
+#define L_CORCHETE	91 // { CODIGO ASCII
+#define R_CORCHETE	93 // } CODIGO ASCII
+#define COMA 		44
+#define PR_NULL		00
+#define DOS_PUNTOS	58
+			
 // Fin Codigos
 #define TAMBUFF 	5
 #define TAMLEX 		50
