@@ -12,7 +12,7 @@
 
 /*********** Inclusión de cabecera **************/
 #include "tablaSimbolos.c"
-
+#include <ctype.h>
 
 /************* Variables globales **************/
 
@@ -79,7 +79,7 @@ void sigLex()
 			do{
 				id[i]=c;
 				i++;
-				c=fgetc(archivo);
+				c=toupper(fgetc(archivo));
 				if (i>=TAMLEX)
 					error("Longitud de Identificador excede tamaño de buffer");
 			}while(isalpha(c));

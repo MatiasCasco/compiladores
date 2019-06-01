@@ -1,0 +1,25 @@
+{  TRUE
+   "personas":[  
+      {  
+         "ci":123ea4567,
+         "hijos":[  
+
+         ]
+      },
+      {  
+         "ci":765a4321,
+         "nombre":"Juan Gomez",
+         "casado":NUL,
+         "hijos":[  
+            {  
+               "nombre":"Jorge",
+               "edad":18
+            },
+            {  
+               "nombre":"Valeria",
+               "edad":16
+            }
+         ]
+      }
+   ]
+}
